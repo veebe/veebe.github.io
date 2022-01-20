@@ -1,0 +1,58 @@
+body {
+font-family: arial, helvetica, sans-serif;
+font-size: 24px;
+background-color: rgb(244, 244, 244);
+padding: 0px;
+margin: Opx;
+}
+
+.div1 {
+    width: 30%;
+    height: 350px;
+    background-color: rgb(231, 229, 233);
+    text-align: center;
+    margin: 200px auto auto;
+    border-radius: 20px;
+}
+
+.val1label {
+    padding-top: 50px;
+    margin: 0px 0px 0px -150px;
+}
+
+.inp1 {
+    width: 200px;
+    height: 25px;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.val2label {
+    padding-top:20px;
+    margin: 0px 0px 0px -150px;
+}
+
+.inp2 {
+    width: 200px;
+    height: 25px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(102, 103, 119);
+    color: rgb(244, 244, 244);
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #515260;
+}
+
+.button:active {
+    background-color: #3c3d4b;
+}
