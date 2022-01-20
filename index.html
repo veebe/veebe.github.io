@@ -9,9 +9,15 @@
       return Math.floor(Math.random() * max);
     }
 
+    let i = 0;
     function getCislo() {
         let cisla = [8,19]
         document.getElementById("vysledok").innerHTML = cisla[getRandomInt(2)];
+        document.getElementById("vysledok").innerHTML = cisla[i];
+        i++;
+        if (i > 1) {
+          i = 0;
+        }
     }
 
   </script>
@@ -25,7 +31,7 @@
       <p class="val2label">do</p>
       <input type="number" name="val2" class="inp2" value="" placeholder="do">
       <br>
-      <button type="button" name="button" class="button" onclick="getCislo()">vygenerovat</button>
+      <button type="button" name="button" class="button" onclick="getCislo()">vygenerovať</button>
       <p id="vysledok">číslo</p>
     </div>
   </div>
