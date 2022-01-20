@@ -11,11 +11,11 @@
 
     let i = 0;
     function getCislo() {
-        let cisla = [8,19]
+        let cisla = [8,19,11]
         document.getElementById("vysledok").innerHTML = cisla[getRandomInt(2)];
         document.getElementById("vysledok").innerHTML = cisla[i];
         i++;
-        if (i > 1) {
+        if (i > 2) {
           i = 0;
         }
     }
@@ -25,14 +25,14 @@
 <body>
   <div class="div1">
     <div class="div2">
-      <p class="val1label">od</p>
-      <input type="number" class="inp1" name="valı" value="1" placeholder="od">
+      <p class="val1label">from</p>
+      <input type="number" class="inp1" name="valı" value="1" placeholder="from">
       <br>
-      <p class="val2label">do</p>
-      <input type="number" name="val2" class="inp2" value="" placeholder="do">
+      <p class="val2label">to</p>
+      <input type="number" name="val2" class="inp2" value="" placeholder="to">
       <br>
-      <button type="button" name="button" class="button" onclick="getCislo()">vygenerovať</button>
-      <p id="vysledok">číslo</p>
+      <button type="button" name="button" class="button" onclick="getCislo()">generate</button>
+      <p id="vysledok">number</p>
     </div>
   </div>
 </body>
