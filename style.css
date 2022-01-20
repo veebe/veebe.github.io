@@ -59,3 +59,28 @@ margin: Opx;
 .button:active {
     background-color: #3c3d4b;
 }
+
+.nadpis {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  font-size: 32px;
+  color: #3c3d4b;
+}
+.podnadpis {
+  margin-left: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+footer {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: fixed;
+  font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    background-color: #8ec6ff;
+    color: #fff;
+    bottom: 0;
+}
