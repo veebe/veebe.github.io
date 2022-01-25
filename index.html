@@ -10,28 +10,59 @@
     }
 
     let i = 0;
+    let a = 0;
+    let o = 0;
     function getCislo() {
-        let cisla = [8,19,11]
-        document.getElementById("vysledok").innerHTML = cisla[getRandomInt(2)];
-        document.getElementById("vysledok").innerHTML = cisla[i];
-        i++;
-        if (i > 2) {
+        //let cisla = [8,19,11]
+        let cisla1 = [6,14]
+        let cisla2 = [29,37]
+        let cisla3 = [53,60]
+        if (document.getElementById("val1").value >= 1 && document.getElementById("val2").value <= 20) {
+          document.getElementById("vysledok").innerHTML = cisla1[i];
+          i++;
+        }
+        else if (document.getElementById("val1").value >= 21 && document.getElementById("val2").value <= 40){
+          document.getElementById("vysledok").innerHTML = cisla2[a];
+          a++;
+        }
+        else if (document.getElementById("val1").value >= 41){
+          document.getElementById("vysledok").innerHTML = cisla3[o];
+          o++;
+        }
+        if (i > 1) {
           i = 0;
         }
+        if (a > 1) {
+          a = 0;
+        }
+        if (o > 1) {
+          o = 0;
+        }
+        //document.getElementById("vysledok").innerHTML = cisla[getRandomInt(2)];
+        //document.getElementById("vysledok").innerHTML = cisla[i];
+
+        /*i++;
+        if (i > 1) {
+          i = 0;
+        }*/
     }
 
   </script>
 </head>
 <body>
-  <h1 class="nadpis">RANDOM NUMBER GENERATOR</h1>
+  <div class="display">
+    <h1 class="nadpis">RANDOM NUMBER GENERATOR</h1>
+    <h1 class="google">GOOGLE</h1>
+  </div>
+
   <p class="podnadpis">true randomness</p>
   <div class="div1">
     <div class="div2">
       <p class="val1label">min</p>
-      <input type="number" class="inp1" name="valı" value="1" placeholder="min">
+      <input type="number" class="inp1" name="valı" value="1" placeholder="min" id="val1">
       <br>
       <p class="val2label">max</p>
-      <input type="number" name="val2" class="inp2" value="" placeholder="max">
+      <input type="number" name="val2" class="inp2" value="" placeholder="max" id="val2">
       <br>
       <button type="button" name="button" class="button" onclick="getCislo()">generate</button>
       <p id="vysledok">number</p>
